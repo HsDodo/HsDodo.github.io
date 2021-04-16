@@ -1,0 +1,233 @@
+/* Here is your custom css styles. */
+
+/* hexo-filter-github-emojis */
+.github-emoji{
+    height: 2em;
+    width: 2em;
+    display: inline-block !important;
+    position: relative;
+    margin: 0 3px !important;
+    padding: 0;
+}
+.github-emoji:hover{
+    animation: emoji-face 5s infinite ease-in-out;
+}
+
+
+
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+@keyframes emoji-face {
+    2% {
+        transform: translate(0, 1.5px) rotate(1.5deg);
+    }
+    4% {
+        transform: translate(0, -1.5px) rotate(-0.5deg);
+    }
+    6% {
+        transform: translate(0, 1.5px) rotate(-1.5deg);
+    }
+    8% {
+        transform: translate(0, -1.5px) rotate(-1.5deg);
+    }
+    10% {
+        transform: translate(0, 2.5px) rotate(1.5deg);
+    }
+    12% {
+        transform: translate(0, -0.5px) rotate(1.5deg);
+    }
+    14% {
+        transform: translate(0, -1.5px) rotate(1.5deg);
+    }
+    16% {
+        transform: translate(0, -0.5px) rotate(-1.5deg);
+    }
+    18% {
+        transform: translate(0, 0.5px) rotate(-1.5deg);
+    }
+    20% {
+        transform: translate(0, -1.5px) rotate(2.5deg);
+    }
+    22% {
+        transform: translate(0, 0.5px) rotate(-1.5deg);
+    }
+    24% {
+        transform: translate(0, 1.5px) rotate(1.5deg);
+    }
+    26% {
+        transform: translate(0, 0.5px) rotate(0.5deg);
+    }
+    28% {
+        transform: translate(0, 0.5px) rotate(1.5deg);
+    }
+}
+
+@font-face{
+    font-family: '青春梦想';
+    src: url('../font/myfont.ttf');
+}
+
+
+@font-face {
+    font-family: 'iconfont';  /* project id 2485090 */
+    src: url('//at.alicdn.com/t/font_2485090_z92vrpvug6.eot');
+    src: url('//at.alicdn.com/t/font_2485090_z92vrpvug6.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2485090_z92vrpvug6.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2485090_z92vrpvug6.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2485090_z92vrpvug6.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2485090_z92vrpvug6.svg#iconfont') format('svg');
+  }
+
+body{
+    font-family: '青春梦想';
+}
+
+#artDetail{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* li ol ul 标签样式 */
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    box-sizing: border-box;
+    outline: none;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+
+
+}
+
+
+#artDetail ol,
+#artDetail ul {
+  margin-top: 0.4rem;
+  padding: 0 0 0 0.8rem;
+  list-style: none;
+  counter-reset: li;
+}
+
+#artDetail ol p,
+#artDetail ul p {
+  margin: 0 0 0.5rem;
+}
+
+#artDetail ol ol,
+#artDetail ul ol,
+#artDetail ol ul,
+#artDetail ul ul {
+  padding-left: 0.5rem;
+}
+
+#artDetail ol li:not(.tab),
+#artDetail ul li:not(.tab) {
+  position: relative;
+  margin: 0.2rem 0;
+  padding: 0.1rem 0.5rem 0.1rem 1.5rem;
+}
+
+#artDetail ol li:hover:before,
+#artDetail ul li:hover:before {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+
+
+
+#artDetail ol li:before,
+#artDetail ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #673ab7;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#artDetail ol>li:before {
+  margin-top: 0.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  content: counter(li);
+  counter-increment: li;
+  text-align: center;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+}
+
+#artDetail ul>li:not(.tab):hover:before {
+  border-color: #ff7242;
+}
+
+#artDetail ul>li:not(.tab):before {
+    top: 8px;
+    margin-left: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border: 0.3rem solid #673ab7;
+    border-radius: 1.3rem;
+    background: transparent;
+    content: '';
+    line-height: 0.3rem;
+}
+/* #article-container  -> #artDetail */
+
+
+
+    
+    h1, h2, h3, h4, h5, h6 {
+        position: relative;
+        margin: 1rem 0 0.7rem;
+        color: #344c67;
+        font-weight: bold;
+        
+    }
+    
+    *{
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+
+    
+    #articleContent h1:before ,#articleContent h2:before,#articleContent h3:before,#articleContent h4:before,#articleContent h5:before,#articleContent h6:before{
+        color:#5ba119;
+        margin-left: -1.6rem;
+        margin-top: -0.5rem;
+        font-size: 1.7rem;
+    }
+    
+    #articleContent h1:before,#articleContent h2:before,#articleContent h3:before,#articleContent h4:before,#articleContent h5:before,#articleContent h6:before{
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+    
