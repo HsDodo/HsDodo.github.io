@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>花森°</title>
+  <title>花森°の小栈</title>
   
   <subtitle>花森°の小栈</subtitle>
   <link href="https://hsdodo.github.io/atom.xml" rel="self"/>
   
   <link href="https://hsdodo.github.io/"/>
-  <updated>2021-04-17T12:50:14.311Z</updated>
+  <updated>2021-04-17T15:45:26.228Z</updated>
   <id>https://hsdodo.github.io/</id>
   
   <author>
-    <name>HsDodo</name>
+    <name>花森°</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>并查集</title>
+    <link href="https://hsdodo.github.io/2021/04/17/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    <id>https://hsdodo.github.io/2021/04/17/%E5%B9%B6%E6%9F%A5%E9%9B%86/</id>
+    <published>2021-04-17T15:03:19.000Z</published>
+    <updated>2021-04-17T15:45:26.228Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Union-Find-并查集&quot;&gt;&lt;a href=&quot;#Union-Find-并查集&quot; class=&quot;headerlink&quot; title=&quot;Union-Find 并查集&quot;&gt;&lt;/a&gt;Union-Find</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://hsdodo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://hsdodo.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="并查集" scheme="https://hsdodo.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="Union-Find" scheme="https://hsdodo.github.io/tags/Union-Find/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo 搭建</title>
@@ -44,16 +73,14 @@
     <link href="https://hsdodo.github.io/2021/04/17/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     <id>https://hsdodo.github.io/2021/04/17/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</id>
     <published>2021-04-17T11:56:17.642Z</published>
-    <updated>2021-04-17T14:24:46.445Z</updated>
+    <updated>2021-04-17T15:56:59.246Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;–&lt;/p&gt;
-&lt;h2 id=&quot;第二章-矩-阵&quot;&gt;&lt;a href=&quot;#第二章-矩-阵&quot; class=&quot;headerlink&quot; title=&quot;第二章 矩     阵&quot;&gt;&lt;/a&gt;第二章 矩     阵&lt;/h2&gt;&lt;hr&gt;
-&lt;h3 id=&quot;矩阵的秩&quot;&gt;&lt;a href=&quot;#矩阵的秩&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;线性代数&quot;&gt;&lt;a href=&quot;#线性代数&quot; class=&quot;headerlink&quot; title=&quot;线性代数&quot;&gt;&lt;/a&gt;线性代数&lt;/h1&gt;&lt;h2 id=&quot;📏第一章-行-列-式&quot;&gt;&lt;a href=&quot;#📏第一章-行-列-式&quot; class=&quot;headerlink&quot;</summary>
         
       
     

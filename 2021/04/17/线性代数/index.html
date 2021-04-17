@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>线性代数 | 花森°</title>
+    <title>线性代数 | 花森°の小栈</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="themes/iconfont/iconfont.css">
@@ -190,7 +190,7 @@
     };
     loaded();
 })()
- </script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="花森°" type="application/atom+xml">
+ </script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="花森°の小栈" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -213,7 +213,7 @@
                     
                     <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">花森°</span>
+                    <span class="logo-span">花森°の小栈</span>
                 </a>
             </div> -->
 
@@ -224,7 +224,7 @@
                         
                         <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
                         
-                        <span class="logo-span">花森°</span>
+                        <span class="logo-span">花森°の小栈</span>
                     </div>
                 </a>
             </div>
@@ -339,7 +339,7 @@
         
         <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">花森°</div>
+        <div class="logo-name">花森°の小栈</div>
         <div class="logo-desc">
             
             个人学习,为更好的明天而奋斗！
@@ -539,12 +539,21 @@
     <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     
-    #articleContent h1::before,
+
     #articleContent h2::before,
     #articleContent h3::before,
     #articleContent h4::before,
     #articleContent h5::before,
     #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+
+    }
+
+    #articleContent h1::before{
         /* display: block;
         content: " ";
         height: 100px;
@@ -570,22 +579,7 @@
     }
 
 
-#articleContent h1:before ，#articleContent h2:before，#articleContent h3:before，#articleContent h4:before，#articleContent h5:before，#articleContent h6:before{
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
 
-
-#articleContent h1:before ，#articleContent h2:before，#articleContent h3:before，#articleContent h4:before，#articleContent h5:before，#articleContent h6:before{
-    color:#5ba119;
-    margin-left: -1.6rem;
-    margin-top: -0.5rem;
-    font-size: 1.7rem;
-}
 
 
 /* 
@@ -745,7 +739,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    213
+                    223
                 </div>
                 
 
@@ -767,9 +761,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>–</p>
-<h2 id="第二章-矩-阵"><a href="#第二章-矩-阵" class="headerlink" title="第二章 矩     阵"></a>第二章 矩     阵</h2><hr>
-<h3 id="矩阵的秩"><a href="#矩阵的秩" class="headerlink" title="矩阵的秩"></a>矩阵的秩</h3><blockquote>
+                <h1 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h1><h2 id="📏第一章-行-列-式"><a href="#📏第一章-行-列-式" class="headerlink" title="📏第一章 行  列  式"></a>📏第一章 行  列  式</h2><hr>
+<h2 id="📐第二章-矩-阵"><a href="#📐第二章-矩-阵" class="headerlink" title="📐第二章 矩     阵"></a>📐第二章 矩     阵</h2><hr>
+<h3 id="💫矩阵的秩"><a href="#💫矩阵的秩" class="headerlink" title="💫矩阵的秩"></a>💫矩阵的秩</h3><blockquote>
 <p>个人理解: 关于秩可以把其想象为 维度数,设$A(α1,α2,α3)$ 若$R(A) =2$,则表示A可以表示一个二维平面,</p>
 <p>若是$R(A)=3$,则可以表示一个三维空间,$ r(A) = r $表示A的非零子式最高阶为 r</p>
 </blockquote>
@@ -1428,8 +1422,8 @@ Markdown 的文件标题
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 花森°<br />'
-            + '文章作者: HsDodo<br />'
+            + '来源: 花森°の小栈<br />'
+            + '文章作者: 花森°<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1632,13 +1626,13 @@ Markdown 的文件标题
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="/about" target="_blank">HsDodo</a>
+            <a href="/about" target="_blank">花森°</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.6k</span>&nbsp;字
+                class="white-color">4.2k</span>&nbsp;字
             
             
             
