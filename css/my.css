@@ -99,6 +99,7 @@ body{
 /* li ol ul 标签样式 */
 li {
     display: list-item;
+    list-style: none  !important;
     text-align: -webkit-match-parent;
     box-sizing: border-box;
     outline: none;
@@ -114,7 +115,7 @@ li {
 #artDetail ul {
   margin-top: 0.4rem;
   padding: 0 0 0 0.8rem;
-  list-style: none;
+  list-style: none  !important;
   counter-reset: li;
 }
 
