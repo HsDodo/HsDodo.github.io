@@ -13,9 +13,6 @@
     animation: emoji-face 5s infinite ease-in-out;
 }
 
-
-
-
 .icon {
     width: 1em;
     height: 1em;
@@ -75,6 +72,13 @@
 }
 
 
+
+@font-face{
+    font-family: '仓耳舒圆体';
+    src: url('../font/仓耳舒圆体W02.ttf');
+}
+
+
 @font-face {
     font-family: 'iconfont';  /* project id 2485090 */
     src: url('//at.alicdn.com/t/font_2485090_z92vrpvug6.eot');
@@ -90,7 +94,8 @@ body{
 }
 
 #artDetail{
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: '仓耳舒圆体';
 }
 
 
@@ -195,9 +200,6 @@ li {
 }
 /* #article-container  -> #artDetail */
 
-
-
-    
     h1, h2, h3, h4, h5, h6 {
         position: relative;
         margin: 1rem 0 0.7rem;
