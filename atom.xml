@@ -6,7 +6,7 @@
   <link href="https://hsdodo.github.io/atom.xml" rel="self"/>
   
   <link href="https://hsdodo.github.io/"/>
-  <updated>2021-04-20T04:47:26.168Z</updated>
+  <updated>2021-04-21T02:29:23.332Z</updated>
   <id>https://hsdodo.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux学习小抄</title>
+    <link href="https://hsdodo.github.io/2021/04/21/Linux%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%8A%84/"/>
+    <id>https://hsdodo.github.io/2021/04/21/Linux%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%8A%84/</id>
+    <published>2021-04-21T00:27:09.000Z</published>
+    <updated>2021-04-21T02:29:23.332Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux-学习小抄&quot;&gt;&lt;a href=&quot;#Linux-学习小抄&quot; class=&quot;headerlink&quot; title=&quot;Linux 学习小抄&quot;&gt;&lt;/a&gt;Linux 学习小抄&lt;/h1&gt;&lt;h2 id=&quot;💫JDK配置&quot;&gt;&lt;a href=&quot;#💫JDK配置&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://hsdodo.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://hsdodo.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JSP学习</title>
     <link href="https://hsdodo.github.io/2021/04/19/JSP%E5%AD%A6%E4%B9%A0/"/>
     <id>https://hsdodo.github.io/2021/04/19/JSP%E5%AD%A6%E4%B9%A0/</id>
     <published>2021-04-19T06:31:22.000Z</published>
-    <updated>2021-04-20T04:47:26.168Z</updated>
+    <updated>2021-04-21T00:27:33.981Z</updated>
     
     
       

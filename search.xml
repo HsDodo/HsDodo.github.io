@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux学习小抄</title>
+      <link href="/2021/04/21/Linux%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%8A%84/"/>
+      <url>/2021/04/21/Linux%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%8A%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux-学习小抄"><a href="#Linux-学习小抄" class="headerlink" title="Linux 学习小抄"></a>Linux 学习小抄</h1><h2 id="💫JDK配置"><a href="#💫JDK配置" class="headerlink" title="💫JDK配置"></a>💫JDK配置</h2><ul><li><p>网上下好Linux版本的JDK ，例如: jdk-8u181-linux-x64.tar.gz ,并放到Linux 系统下面/usr/local/jdk/</p><p>本地下好了JDK 可以用Xftp上传上去，或者用在cmd中用scp命令上传</p><pre><code>scp 源文件路径 用户名@目标主机名或IP地址: 目标文件路径</code></pre></li></ul><ul><li><p>解压JDK</p><pre><code>tar zxvf jdk-8u181-linux-x64.tar.gz</code></pre></li><li><p>配置环境变量</p><p>打开profile配置文件</p><pre><code>vim /etc/profile</code></pre><p>尾部添加以下信息(根据自己需要改自己的实际目录)</p><pre><code>export JAVA_HOME=/usr/local/jdk/jdk1.8.0_181export CLASSPATH=$:CLASSPATH:$JAVA_HOME/lib/export PATH=$PATH:$JAVA_HOME/bin</code></pre></li><li><p>刷新配置使其生效</p><pre><code>source /etc/profile</code></pre></li><li><p>查看是否安装成功 java -version</p><pre><code>java -version</code></pre></li></ul><h2 id="💫SSH远程连接服务器或者虚拟机"><a href="#💫SSH远程连接服务器或者虚拟机" class="headerlink" title="💫SSH远程连接服务器或者虚拟机"></a>💫SSH远程连接服务器或者虚拟机</h2><ul><li><p>ssh 命令使用格式:</p><pre><code>ssh 用户名@目标主机名或IP地址例:ssh root@192.168.2.5</code></pre></li><li><p>scp 从windows 上传文件到Linux系统 </p><pre><code>scp 源文件路径 用户名@目标主机名或IP地址: 目标文件路径</code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JSP学习</title>
       <link href="/2021/04/19/JSP%E5%AD%A6%E4%B9%A0/"/>
       <url>/2021/04/19/JSP%E5%AD%A6%E4%B9%A0/</url>
