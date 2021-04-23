@@ -1251,16 +1251,17 @@
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="英语好句">
+                        <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="英语句子摘抄">
                         
-                        <span class="card-title">英语好句</span>
+                        <span class="card-title">英语句子摘抄</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-In this rapidly changing knowledge economy, one of the most important and difficult decisions we have to make repeatedl
+                            💫学习与发展
+
+In this rapidly changing knowledge economy, one of the most important and difficult decisions we have to make r
                         
                     </div>
                     <div class="publish-info">
@@ -1286,12 +1287,12 @@ In this rapidly changing knowledge economy, one of the most important and diffic
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%8B%B1%E8%AF%AD/">
-                        <span class="chip bg-color">英语</span>
-                    </a>
-                    
                     <a href="/tags/%E8%80%83%E7%A0%94/">
                         <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%8B%B1%E8%AF%AD/">
+                        <span class="chip bg-color">英语</span>
                     </a>
                     
                 </div>
@@ -1343,12 +1344,12 @@ In this rapidly changing knowledge economy, one of the most important and diffic
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Swing/">
-                        <span class="chip bg-color">Swing</span>
-                    </a>
-                    
                     <a href="/tags/Java/">
                         <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/Swing/">
+                        <span class="chip bg-color">Swing</span>
                     </a>
                     
                 </div>
@@ -1361,43 +1362,6 @@ In this rapidly changing knowledge economy, one of the most important and diffic
 
 </div>
 
-
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
-
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
-            return;
-        }
-
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
-
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: 花森°<br />'
-            + '文章作者: 花森°<br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
 
 
 
@@ -1421,6 +1385,10 @@ In this rapidly changing knowledge economy, one of the most important and diffic
 
 
 <!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
 
 
 
@@ -1592,7 +1560,7 @@ In this rapidly changing knowledge economy, one of the most important and diffic
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.9k</span>&nbsp;字
+                class="white-color">8.2k</span>&nbsp;字
             
             
             

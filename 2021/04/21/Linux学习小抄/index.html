@@ -728,7 +728,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-21
+                    2021-04-22
                 </div>
                 
 
@@ -757,7 +757,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Linux-学习小抄"><a href="#Linux-学习小抄" class="headerlink" title="Linux 学习小抄"></a>Linux 学习小抄</h1><h2 id="💫JDK配置"><a href="#💫JDK配置" class="headerlink" title="💫JDK配置"></a>💫JDK配置</h2><ul>
+                <h1 id="Linux-学习小抄"><a href="#Linux-学习小抄" class="headerlink" title="Linux 学习小抄"></a>Linux 学习小抄</h1><h2 id="💫-JDK配置"><a href="#💫-JDK配置" class="headerlink" title="💫 JDK配置"></a>💫 <font color='#ff7f50'>JDK配置</font></h2><ul>
 <li><p>网上下好Linux版本的JDK ，例如: jdk-8u181-linux-x64.tar.gz ,并放到Linux 系统下面/usr/local/jdk/</p>
 <p>本地下好了JDK 可以用Xftp上传上去，或者用在cmd中用scp命令上传</p>
 <pre><code>scp 源文件路径 用户名@目标主机名或IP地址: 目标文件路径</code></pre>
@@ -782,7 +782,7 @@ export PATH=$PATH:$JAVA_HOME/bin</code></pre>
 <pre><code>java -version</code></pre>
 </li>
 </ul>
-<h2 id="💫SSH远程连接服务器或者虚拟机"><a href="#💫SSH远程连接服务器或者虚拟机" class="headerlink" title="💫SSH远程连接服务器或者虚拟机"></a>💫SSH远程连接服务器或者虚拟机</h2><ul>
+<h2 id="💫-SSH远程连接服务器或者虚拟机"><a href="#💫-SSH远程连接服务器或者虚拟机" class="headerlink" title="💫 SSH远程连接服务器或者虚拟机"></a>💫 <font color='#ff7f50'>SSH远程连接服务器或者虚拟机</font></h2><ul>
 <li><p>ssh 命令使用格式:</p>
 <pre><code>ssh 用户名@目标主机名或IP地址
 例:
@@ -1312,9 +1312,9 @@ ssh root@192.168.2.5</code></pre>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux 学习小抄💫JDK配置
+                            Linux 学习小抄💫 JDK配置
 网上下好Linux版本的JDK ，例如: jdk-8u181-linux-x64.tar.gz ,并放到Linux 系统下面/usr/local/jdk/
-本地下好了JDK 可以用Xftp上传上去，或者用
+本地下好了JDK 可以用Xftp上传上去，或者
                         
                     </div>
                     <div class="publish-info">
@@ -1355,15 +1355,15 @@ ssh root@192.168.2.5</code></pre>
                 <a href="/2021/04/19/JSP%E5%AD%A6%E4%B9%A0/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/24.jpg" class="responsive-img" alt="JSP学习">
+                        <img src="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/loding.gif" data-original="https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/24.jpg" class="responsive-img" alt="JSP学习小抄">
                         
-                        <span class="card-title">JSP学习</span>
+                        <span class="card-title">JSP学习小抄</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JSP学习🎯Session
+                            JSP学习🎯 Session
 
 
 S.N.
@@ -1376,7 +1376,7 @@ public Object getAttribute(String name) 返回session对象中与指定名称绑
 
 
 2
-p
+
                         
                     </div>
                     <div class="publish-info">
@@ -1413,43 +1413,6 @@ p
 </div>
 
 
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
-
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
-            return;
-        }
-
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
-
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: 花森°<br />'
-            + '文章作者: 花森°<br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
-
 
 
 <!-- 代码块功能依赖 -->
@@ -1472,6 +1435,10 @@ p
 
 
 <!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
 
 
 
@@ -1643,7 +1610,7 @@ p
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.9k</span>&nbsp;字
+                class="white-color">8.2k</span>&nbsp;字
             
             
             
