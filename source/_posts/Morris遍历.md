@@ -1,3 +1,4 @@
+---
 title: Morris遍历
 data: 2020 10-11 21:25:00
 author: HsDodo
@@ -6,9 +7,10 @@ tags:
   - 二叉树遍历
 categories: 算法
 keywords: 博客
+cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/4.jpg
 reprintPolicy: noreprint
 
-----------------------------------------------------
+---
 
 ## <font color='#ff7f50'>Morris遍历</font>
 

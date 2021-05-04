@@ -1,0 +1,109 @@
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+    background:rgba(255, 255, 255, 0.9);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+  background:rgba(255, 255, 255, 0.9)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 分页页面 */
+div#page{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 归档页面 */
+div#archive{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 标签页面 */
+div#tag{
+  background: rgba(255, 255, 255, 0.9);
+}
+/* 分类页面 */
+div#category{
+  background: rgba(255, 255, 255, 0.9);
+}
+
+  /*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+#page-header,
+#web_bg {
+    -webkit-animation: imgblur 3s 1 ease-in-out;
+    animation: imgblur 3s 1 ease-in-out;
+}
+@keyframes imgblur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+/*适配使用-webkit内核的浏览器 */
+@-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+/* 页脚透明 */
+#footer{
+    background: transparent!important;
+  }
+
+/* a标签默认颜色 */
+
+#article-container a {
+  color: #00c4b6;
+  text-decoration: none;
+}
+
+/* 鼠标悬停时的颜色 */
+
+#article-container a:hover {
+  color: #e58a8a;
+  text-decoration: none;
+}
+/*a标签颜色*/
+a {
+  color: #00c4b6;
+}
+
+/* 首页中间打字效果上方 */
+#page-header #site_title {
+  color: #80bdab;
+}
+/* 顶部导航栏 */
+#nav a {
+  color: #f9f2f4;
+}
+
+/*页脚自定义字段字体颜色*/
+/* 也就是配置文件里的footer_custom_text */
+.footer_custom_text {
+  color: #00c4b6;
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+
+@media screen and (max-width: 800px) {
+  #aside_content div:not(:last-child) {
+      display: none;
+      font-size: 13px;
+  }
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+
+@media screen and (max-width: 800px) {
+  #aside_content div:not(:last-child) {
+      display: none;
+      font-size: 13px;
+  }
+}
+
+

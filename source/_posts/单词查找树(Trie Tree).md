@@ -2,7 +2,7 @@
 title: 单词查找树(Trie Tree)
 data: 2020 09-24 22:00:00
 author: HsDodo
-img: /medias/banner/3.jpg
+cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/15.jpg
 tags: 
      - 数据结构
      - 单词查找树
@@ -12,7 +12,6 @@ keywords:
 	 - 单词查找树
 	 - 字典树
 	 - Trie Tree
-reprintPolicy: noreprint
 
 ---
 ##### 字典树(Trie Tree)
@@ -26,7 +25,7 @@ reprintPolicy: noreprint
 
 
 
-```java
+```javascript
 package 字典树;
 import javafx.concurrent.WorkerStateEvent;
 import java.util.ArrayList;
@@ -125,7 +124,7 @@ public class TST {
 
 ######  <font color='#ff7f50'>R向单词查找树</font>
 
-```java
+```javascript
 package 字典树;
 
 import java.awt.*;

@@ -2,7 +2,7 @@
 title: Java中Swing的焦点的问题
 data: 2020 09-05 21:22:00
 author: HsDodo
-img: https://s1.ax1x.com/2020/09/05/wEdWSH.png
+cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/wallhaven-dgojvj.jpg
 tags: Swing
 categories: Java
 keywords: 博客

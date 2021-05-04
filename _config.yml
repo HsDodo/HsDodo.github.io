@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 花森°
-subtitle: 花森°の小栈
+title: 花森°の小栈
+subtitle: 花森°
 description: 个人学习,为更好的明天而奋斗！
 keywords: 个人学习
 author: 花森°
@@ -101,7 +101,7 @@ feed:
   order_by: -date
 
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -148,7 +148,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: hexo-theme-matery-master
-theme: hexo-theme-butterfly
+theme: hexo-theme-butterfly-dev
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
@@ -159,3 +159,15 @@ deploy:
   # repo: https://github.com/HsDodo/HsDodo.github.io.git
   
   branch: master
+
+## 哔哔功能配置
+## 关注公众号 "黑石哔哔"，发送: //bindCurrentUser:你的APPID,你的MASTERKEY,你的RESTAPI 
+## 可用leancloud国际版，国际版api为 https://appid前八位.api.lncldglobal.com 
+bb:
+ title: 小日常  #页面title
+ appId: 7vuw3ha5TiKhQO4x0mioG0g1-MdYXbMMI
+ appKey: Eh2OLEibARE9r4AHgp39vktL
+ serverURLs: https://7vuw3ha5.api.lncldglobal.com
+ limit: 10 #显示条数
+ path: bb #路径名称 例如：https://你的域名/bb
+ content: '👉🏼此说说通过📱手机微信发出，主要记录碎片化思考和动态。📑' #显示在哔哔上方,如不需要注释即可

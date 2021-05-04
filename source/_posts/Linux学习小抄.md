@@ -1,7 +1,7 @@
 ---
 title: Linux学习小抄
 date: 2021-04-21 08:27:09
-img: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/4.jpg
+cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/4.jpg
 tags: 
      - Linux
 categories: Linux

@@ -1,7 +1,7 @@
 ---
 title: JSP学习小抄
 date: 2021-04-19 14:31:22
-img: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/24.jpg
+cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/24.jpg
 tags: 
      - JSP
 categories: JSP
@@ -26,7 +26,7 @@ categories: JSP
 | 10       | **public void setAttribute(String name, Object value)** 使用指定的名称和值来产生一个对象并绑定到session中 |
 | 11       | **public void setMaxInactiveInterval(int interval)** 用来指定时间，以秒为单位，servlet容器将会在这段时间内保持会话有效 |
 
-``` java
+``` javascript
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
