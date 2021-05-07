@@ -92,7 +92,7 @@
     <link href="www.lhongsen.top/2021/04/17/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     <id>www.lhongsen.top/2021/04/17/%E5%B9%B6%E6%9F%A5%E9%9B%86/</id>
     <published>2021-04-17T15:03:19.000Z</published>
-    <updated>2021-04-30T07:00:14.995Z</updated>
+    <updated>2021-05-06T15:08:33.529Z</updated>
     
     
       
@@ -188,18 +188,18 @@
   </entry>
   
   <entry>
-    <title>单词查找树(Trie Tree)</title>
-    <link href="www.lhongsen.top/2020/09/24/%E5%8D%95%E8%AF%8D%E6%9F%A5%E6%89%BE%E6%A0%91(Trie%20Tree)/"/>
-    <id>www.lhongsen.top/2020/09/24/%E5%8D%95%E8%AF%8D%E6%9F%A5%E6%89%BE%E6%A0%91(Trie%20Tree)/</id>
-    <published>2020-09-24T13:54:52.146Z</published>
-    <updated>2021-04-30T07:03:07.175Z</updated>
+    <title>字典树/前缀树(Trie Tree)</title>
+    <link href="www.lhongsen.top/2020/09/24/%E5%89%8D%E7%BC%80%E6%A0%91(Trie%20Tree)/"/>
+    <id>www.lhongsen.top/2020/09/24/%E5%89%8D%E7%BC%80%E6%A0%91(Trie%20Tree)/</id>
+    <published>2020-09-24T14:00:00.000Z</published>
+    <updated>2021-05-07T03:04:35.209Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h5 id=&quot;字典树-Trie-Tree&quot;&gt;&lt;a href=&quot;#字典树-Trie-Tree&quot; class=&quot;headerlink&quot; title=&quot;字典树(Trie Tree)&quot;&gt;&lt;/a&gt;字典树(Trie Tree)&lt;/h5&gt;&lt;h6 id=&quot;三向单词查找树-TST&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;字典树-前缀树-单词查找树-Trie-Tree&quot;&gt;&lt;a href=&quot;#字典树-前缀树-单词查找树-Trie-Tree&quot; class=&quot;headerlink&quot; title=&quot;字典树/前缀树/单词查找树 (Trie Tree)&quot;&gt;&lt;/a&gt;字典树/前缀树/单词查找树</summary>
         
       
     
@@ -210,9 +210,9 @@
     
     <category term="数据结构" scheme="www.lhongsen.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-    <category term="单词查找树" scheme="www.lhongsen.top/tags/%E5%8D%95%E8%AF%8D%E6%9F%A5%E6%89%BE%E6%A0%91/"/>
-    
     <category term="Trie Tree" scheme="www.lhongsen.top/tags/Trie-Tree/"/>
+    
+    <category term="前缀树" scheme="www.lhongsen.top/tags/%E5%89%8D%E7%BC%80%E6%A0%91/"/>
     
   </entry>
   
