@@ -1,36 +1,37 @@
 ---
-title: 单词查找树(Trie Tree)
-data: 2020 09-24 22:00:00
+title: 字典树/前缀树(Trie Tree)
+date: 2020 09-24 22:00:00
 author: HsDodo
 cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/15.jpg
 tags: 
      - 数据结构
-     - 单词查找树
+     - 前缀树
      - Trie Tree
 categories: 数据结构
 keywords:	
 	 - 单词查找树
 	 - 字典树
+	 - 前缀树
 	 - Trie Tree
 
 ---
-##### 字典树(Trie Tree)
+### 字典树/前缀树/单词查找树 (Trie Tree)
+
+{% note green 'fas fa-fan' modern%}
+简简单单的前缀树。
+{% endnote %}
 
 
-######  <font color='#ff7f50'>三向单词查找树(TST)  </font>
+####  <font color='#ff7f50'>三向字典树(TST)  </font>
 > 字典树又叫单词查找树,三向单词查找树中，每个节点都含有一个字符，三条链接和一个值。这三条链接分别对应着当前字母小于，等于和大于节点字母的所有键。三向单词查找树可以避免R向单词查找树过度的空间消耗.查找和插入时，首先比较键的首字母和根节点的字母，如果键的首字母较小，就选择左链接；如果较大，就选择右链接；如果相等就选择中链接。然后递归的使用相同的算法。查找时，如果遇到一个空链接或者当前键结束时节点的值为空，那么未命中；如果键结束时节点的值非空则查找命中。
-
-
 
 
 
 
 ```javascript
 package 字典树;
-import javafx.concurrent.WorkerStateEvent;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @作者 森
  * * @日期 2020-09-24
@@ -38,7 +39,6 @@ import java.util.List;
  */
 public class TST {
     Node head=null;
-    public List<Node> tree=new ArrayList<>();
     class Node{//节点
         char ch;
         Node left,mid,right;//左中右分支
@@ -53,11 +53,9 @@ public class TST {
     }
 
     public void put(String[] words){
-
         for(int i=0;i<words.length;i++){
             head=put(head,words[i],0,i);
         }
-        this.tree.add(head);
     }
 
     private Node put(Node root,String word,int index,int value){
@@ -116,13 +114,15 @@ public class TST {
 
 ```
 
-<img src="/medias/images/TrieTree1.jpg" style="zoom:25%;" />
+<img src="/medias/images/TrieTree1.jpg" style="zoom:35%;" />
 
-<img src="/medias/images/TrieTree2.jpg" style="zoom:25%;" />
+<img src="/medias/images/TrieTree2.jpg" style="zoom:67%;" />
 
 ---
 
-######  <font color='#ff7f50'>R向单词查找树</font>
+####  <font color='#ff7f50'>R向字典树</font>
+
+💫模板①
 
 ```javascript
 package 字典树;
@@ -184,11 +184,6 @@ public class TrieTree {
 
     }
 
-
-
-
-
-
     public static void main(String[] args) {
         String[] words={"like","pig","dog","bird"};
         TrieTree test=new TrieTree();
@@ -211,6 +206,80 @@ class Node{//单个字符节点
         this.flag = -1;//flag =-1表示没有到该字符结尾的单词
     }
 }
+```
+
+💫模板② ( 更好理解 )
+
+```javascript
+class Trie {
+    Trie[] childrens;
+    boolean isEnd;
+    /** Initialize your data structure here. */
+    public Trie() {
+        childrens = new Trie[26];
+        isEnd=false;
+    }
+    
+    /** Inserts a word into the trie. */
+    public void insert(String word) {
+        Trie cur=this;
+        int len=word.length();
+        for(int i=0;i<len;i++){
+            char ch=word.charAt(i);
+            int index=ch-'a';
+            if(cur.childrens[index]==null){
+                cur.childrens[index]=new Trie();
+            }
+            cur=cur.childrens[index];
+            if(i==len-1){
+                cur.isEnd=true;
+            }
+        }
+    }
+    
+    /** Returns if the word is in the trie. */
+    public boolean search(String word) {
+        Trie cur=this;
+        int len=word.length();
+        for(int i=0;i<len;i++){
+            char ch=word.charAt(i);
+            int index=ch-'a';
+            if(cur.childrens[index]==null){
+                return false;
+            }else{
+                cur=cur.childrens[index];
+            }
+            if(i==len-1){
+                return cur.isEnd;
+            }
+        }
+        return cur.isEnd;
+    }
+    
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    public boolean startsWith(String prefix) {
+        Trie cur=this;
+        int len=prefix.length();
+        for(int i=0;i<len;i++){
+            char ch=prefix.charAt(i);
+            int index=ch-'a';
+            if(cur.childrens[index]==null){
+                return false;
+            }
+            cur=cur.childrens[index];
+        }
+        return true;
+
+    }
+}
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie obj = new Trie();
+ * obj.insert(word);
+ * boolean param_2 = obj.search(word);
+ * boolean param_3 = obj.startsWith(prefix);
+ */
 ```
 
 

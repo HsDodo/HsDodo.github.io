@@ -868,6 +868,8 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css">
      - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/iconfont.min.css">
+     
   bottom:
     # - <script src="xxxx"></script>
     - <script async data-pjax src="/js/randombg.js"></script>

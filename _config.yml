@@ -168,6 +168,6 @@ bb:
  appId: 7vuw3ha5TiKhQO4x0mioG0g1-MdYXbMMI
  appKey: Eh2OLEibARE9r4AHgp39vktL
  serverURLs: https://7vuw3ha5.api.lncldglobal.com
- limit: 10 #显示条数
+ limit: 20 #显示条数
  path: bb #路径名称 例如：https://你的域名/bb
  content: '👉🏼此说说通过📱手机微信发出，主要记录碎片化思考和动态。📑' #显示在哔哔上方,如不需要注释即可
