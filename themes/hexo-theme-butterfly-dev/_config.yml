@@ -29,7 +29,7 @@ hide_sidebar_menu_child: false
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: false # show the code language
 highlight_shrink: true # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -98,11 +98,12 @@ disable_top_img: false
 
 # The banner image of home page
 index_img:
+    # - https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/5.jpg
     - https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/5.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
-    - https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/17.jpg
+    # - https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/17.jpg
 # The banner image of archive page
 archive_img:
 
@@ -873,11 +874,16 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css">
      - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
-     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2485090_nzdfselokts.css">
+     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">  #动画标签anima的依赖
+     - <link rel="stylesheet" href="/self/duotone.css">
   bottom:
     # - <script src="xxxx"></script>
-    - <script async data-pjax src="/js/randombg.js"></script>
-
+     - <script async data-pjax src="/js/randombg.js"></script>
+     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2485090_nzdfselokts.css">
+     - <script defer src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+    # 自butterfly_v3.4.0+开始，主题基本实现去jquery化，需要自己添加引用，请读者根据版本自行决定是否添加这行引用。
+     - <script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@latest/source/js/issues.min.js"></script>
+    #数据集合标签issues的依赖
 
 
   ## 哔哔功能配置

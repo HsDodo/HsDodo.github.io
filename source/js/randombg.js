@@ -17,7 +17,7 @@ var backimg =[
     "url(https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/20210508171936.jpg)",
     "url(https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/20210508171935.jpg)"
   ];
-  //获取banner图片总数，生成随机数 Math.random() * (bannerimg.length-1)  每分钟换一张new Date().getMinutes%(bannerimg.length-1)
-  var bannerindex =Math.ceil(new Date().getMinutes%(bannerimg.length-1));
+  //获取banner图片总数，生成随机数 Math.random() * (bannerimg.length-1)
+  var bannerindex =Math.ceil(Math.random() * (bannerimg.length-1));
   //重设banner图片
   document.getElementById("page-header").style.backgroundImage = bannerimg[bannerindex];

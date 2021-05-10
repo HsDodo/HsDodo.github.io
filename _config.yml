@@ -102,7 +102,7 @@ feed:
 
 prismjs:
   enable: true
-  preprocess: true
+  preprocess: false
   line_number: true
   tab_replace: ''
 

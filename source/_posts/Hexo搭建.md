@@ -3,7 +3,6 @@ title: Hexo 搭建
 data: 2021 04-17 21:25:00
 author: 花森°
 categories: Hexo
-reprintPolicy: noreprint
 cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/15.jpg
 
 ---

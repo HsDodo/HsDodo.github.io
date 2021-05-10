@@ -1,6 +1,6 @@
 ---
 title: 字典树/前缀树(Trie Tree)
-date: 2020 09-24 22:00:00
+date: 2020-09-24 22:00:00
 author: HsDodo
 cover: https://cdn.jsdelivr.net/gh/HsDodo/blogImage/images/15.jpg
 tags: 
@@ -18,7 +18,7 @@ keywords:
 ### 字典树/前缀树/单词查找树 (Trie Tree)
 
 {% note green 'fas fa-fan' modern%}
-简简单单的前缀树。
+简简单单前缀树。
 {% endnote %}
 
 
@@ -136,13 +136,7 @@ import java.util.List;
  * @日期 2020-09-21
  */
 public class TrieTree {
-
-
-
-    public List<Node> tree=new ArrayList<>();
-
-
-
+    public List<Node> tree=new ArrayList<>(); //存放节点的集合，可看作一个展开成一条线的树
     public  void insert(String word, int index){//往字典树里插单词
         int len=word.length(),cursor=0;//从字典树最开头的那个node节点开始往下存
         for(int i=0;i<len;i++){

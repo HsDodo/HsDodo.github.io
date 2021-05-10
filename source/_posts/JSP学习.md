@@ -131,6 +131,22 @@ categories: JSP
 
 
 
+## 🎯 <font color='#ff7f50'>JavaBean</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
