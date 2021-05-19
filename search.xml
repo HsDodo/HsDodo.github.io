@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>位运算</title>
+      <link href="/2021/05/19/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+      <url>/2021/05/19/%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<div style='text-align: center;'><h1> <font size=5em color='#ff7f50'>位运算</font></h1></div><hr><h2 id="常见位运算技巧"><a href="#常见位运算技巧" class="headerlink" title="常见位运算技巧"></a><font size=4em color='#afdd22'>常见位运算技巧</font></h2><ol><li><p><strong>计算一个数里二进制 1 的个数</strong></p><p>比如二进制数 <code>n= 10001100 </code> 进行操作<code>n&amp;(n-1)</code>结果如下</p><p>1.<code>n   =   10001100 </code></p><p>2.<code>n-1 =   10001011</code></p><p>3.<code>n&amp;(n-1)=10001000</code></p><p>每次进行上面的操作都能消除最低位的 1 则 :</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">public int countBits(int num)&#123;    int count&#x3D;0;    while(num&gt;0)&#123;n&#x3D;n&amp;(n-1);        count++;    &#125;&#125;</code></pre><p>或</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">public int countBits(int num)&#123;    int count &#x3D; 0;    while(num&gt;0)&#123;        if(num&amp;1&#x3D;&#x3D;1)&#123;            count++;        &#125;        num&gt;&gt;1;    &#125;    return count;&#125;</code></pre></li></ol><ol start="2"><li><p><strong>可以用二进制记录 0-9 每个数字是否出现过</strong></p><p>用一个数 sign 记录 , 当每出现一个数n则将1 左移n位 ,  然后和 sign 相与&amp; </p><p>例 :</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;判断一个数字里面是否有重复数字public boolean judge(int num)&#123;    int sign&#x3D; (1&lt;&lt;10) -1 ;&#x2F;&#x2F; 一开始sign &#x3D; 1111111111    while(num&gt;0)&#123;        int n &#x3D; 1&lt;&lt;(num%10);  &#x2F;&#x2F;取出最末尾那个数(num%10), 并将 1 &lt;&lt; num%10    if((n&amp;sign) &#x3D;&#x3D; 0)&#123; &#x2F;&#x2F;想与 等于0 的话说明 n 没有出现过            sign|&#x3D;n; &#x2F;&#x2F; 将 n 并入 sign        &#125;else&#123;            return false; &#x2F;&#x2F;说明出 sign 现过 n         &#125;        num&#x2F;&#x3D;10;    &#125;    return true;&#125;</code></pre></li></ol><h2 id="位运算小知识"><a href="#位运算小知识" class="headerlink" title="位运算小知识"></a><font size=4em color='#afdd22'>位运算小知识</font></h2><ul><li>n 位 1 的二进制表示的数是 $2^n-1$</li><li>有的题有两个变量 ，则可以用 0 1 表示这两个变量 ,则可以用位位运算来表示这两个变量的排列 ( 挺好用 )</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 位运算 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>特殊数据结构</title>
       <link href="/2021/05/18/%E7%89%B9%E6%AE%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
       <url>/2021/05/18/%E7%89%B9%E6%AE%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
       
-        <content type="html"><![CDATA[<div style='text-align: center;'><h1> <font size=5em color='#ff7f50'>常用数据结构</font> </h1></div><hr><h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a><font size=4em color='#afdd22'>单调栈</font></h1><blockquote><p>单调栈只是用了一些巧妙的逻辑 , 使得每次新元素入栈后 , 栈内的元素都保持单调 ; 单调栈的用途并不广泛 , 只处理一种典型的问题 , </p><p>叫做 Next Greater Element  . 看例题</p></blockquote><p><strong>例</strong> : 输入一个数组 , 返回一个等长的数组 , 对应索引存储着下一个更大的元素 , 如果没有更大的元素 ,就存 -1 .</p><p>比如输入一个数组<code>nums = [2,1,2,4,3]</code> , 算法返回<code> [4,2,4,-1,-1]</code> </p><p>解释 : 第一个 2 后面比2 大的数是4 ; 后面比1大的数是2 ; 第二个 2 后面比2 大的数是4 . . . . </p><p>抽象思路 : 将数组元素看成并列站立的人,元素大小看成人的身高</p><p>✨<strong>单调栈模板</strong></p><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector &lt;int&gt; nextGreaterElement(vector&lt;int&gt;&amp; nums)&#123;    vector&lt;int&gt; ans(nums.size());    stack&lt;int&gt; s;    for(int i&#x3D;nums.size()-1;i&gt;&#x3D;0;i--)&#123;&#x2F;&#x2F;倒着往栈里放东西        while(!s.empty()&amp;&amp;s.top()&lt;&#x3D;nums[i])&#123;&#x2F;&#x2F;判定个子高矮,如果栈不为空且进来的数比栈顶元素大            s.pop();&#x2F;&#x2F;矮个子出列 ,被挡住了,没啥用                    &#125;        ans[i]&#x3D;s.empty()?-1:s.top();        s.push(nums[i]);&#x2F;&#x2F;进队    &#125;    return ans;&#125;</code></pre><p><em>for循环要从后往前扫描元素 , 因为借助的是栈的结构 , 倒着入栈 ,正着出栈</em> ,while 循环则是把两个 “高个儿” 元素之间的元素排除 , 因为他们的存在没有意义了 , 因为前面有着更高的元素 , 所以不可能被作为后续进来的元素的Next Greater Element 了 .</p><h1 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a><font size=4em color='#afdd22'>单调队列</font></h1><p>暂未写 . . .</p><h1 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a><font size=4em color='#afdd22'>二叉搜索树</font></h1><p>暂未写 . . .</p>]]></content>
+        <content type="html"><![CDATA[<div style='text-align: center;'><h1> <font size=5em color='#ff7f50'>常用数据结构</font></h1></div><hr><h2 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a><font size=4em color='#afdd22'>单调栈</font></h2><blockquote><p>单调栈只是用了一些巧妙的逻辑 , 使得每次新元素入栈后 , 栈内的元素都保持单调 ; 单调栈的用途并不广泛 , 只处理一种典型的问题 , </p><p>叫做 Next Greater Element  . 看例题</p></blockquote><p><strong>例</strong> : 输入一个数组 , 返回一个等长的数组 , 对应索引存储着下一个更大的元素 , 如果没有更大的元素 ,就存 -1 .</p><p>比如输入一个数组<code>nums = [2,1,2,4,3]</code> , 算法返回<code> [4,2,4,-1,-1]</code> </p><p>解释 : 第一个 2 后面比2 大的数是4 ; 后面比1大的数是2 ; 第二个 2 后面比2 大的数是4 . . . . </p><p>抽象思路 : 将数组元素看成并列站立的人,元素大小看成人的身高</p><p>✨<strong>单调栈模板</strong></p><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector &lt;int&gt; nextGreaterElement(vector&lt;int&gt;&amp; nums)&#123;    vector&lt;int&gt; ans(nums.size());    stack&lt;int&gt; s;    for(int i&#x3D;nums.size()-1;i&gt;&#x3D;0;i--)&#123;&#x2F;&#x2F;倒着往栈里放东西        while(!s.empty()&amp;&amp;s.top()&lt;&#x3D;nums[i])&#123;&#x2F;&#x2F;判定个子高矮,如果栈不为空且进来的数比栈顶元素大            s.pop();&#x2F;&#x2F;矮个子出列 ,被挡住了,没啥用                    &#125;        ans[i]&#x3D;s.empty()?-1:s.top();        s.push(nums[i]);&#x2F;&#x2F;进队    &#125;    return ans;&#125;</code></pre><p><em>for循环要从后往前扫描元素 , 因为借助的是栈的结构 , 倒着入栈 ,正着出栈</em> ,while 循环则是把两个 “高个儿” 元素之间的元素排除 , 因为他们的存在没有意义了 , 因为前面有着更高的元素 , 所以不可能被作为后续进来的元素的Next Greater Element 了 .</p><h2 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a><font size=4em color='#afdd22'>单调队列</font></h2><p>暂未写 . . .</p><h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a><font size=4em color='#afdd22'>二叉搜索树</font></h2><p>暂未写 . . .</p>]]></content>
       
       
       <categories>
