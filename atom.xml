@@ -6,7 +6,7 @@
   <link href="www.lhongsen.top/atom.xml" rel="self"/>
   
   <link href="www.lhongsen.top/"/>
-  <updated>2021-05-27T15:13:24.139Z</updated>
+  <updated>2021-06-03T15:41:10.429Z</updated>
   <id>www.lhongsen.top/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数论</title>
+    <link href="www.lhongsen.top/2021/06/03/%E6%95%B0%E8%AE%BA/"/>
+    <id>www.lhongsen.top/2021/06/03/%E6%95%B0%E8%AE%BA/</id>
+    <published>2021-06-03T13:15:18.000Z</published>
+    <updated>2021-06-03T15:41:10.429Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div style=&#39;text-align: center;&#39;&gt;
+&lt;h1&gt; &lt;font size=5em color=&#39;#ff7f50&#39;&gt;数论&lt;/font&gt;
+&lt;/h1&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;div class=&quot;note green icon modern&quot;&gt;&lt;i</summary>
+        
+      
+    
+    
+    
+    <category term="数论" scheme="www.lhongsen.top/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    
+    <category term="数论" scheme="www.lhongsen.top/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欧几里得算法</title>
+    <link href="www.lhongsen.top/2021/06/03/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/"/>
+    <id>www.lhongsen.top/2021/06/03/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/</id>
+    <published>2021-06-03T12:46:53.000Z</published>
+    <updated>2021-06-03T15:40:50.078Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div style=&#39;text-align: center;&#39;&gt;
+&lt;h1&gt; &lt;font size=5em color=&#39;#ff7f50&#39;&gt;欧几里得算法&lt;/font&gt;
+&lt;/h1&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;🥗&lt;strong&gt;求最大公约数&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="数论" scheme="www.lhongsen.top/categories/%E6%95%B0%E8%AE%BA/"/>
+    
+    
+    <category term="数论" scheme="www.lhongsen.top/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+    <category term="欧几里得算法" scheme="www.lhongsen.top/tags/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>二叉搜索树</title>

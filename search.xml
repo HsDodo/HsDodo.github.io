@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>数论</title>
+      <link href="/2021/06/03/%E6%95%B0%E8%AE%BA/"/>
+      <url>/2021/06/03/%E6%95%B0%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<div style='text-align: center;'><h1> <font size=5em color='#ff7f50'>数论</font></h1></div><hr><div class="note green icon modern"><i class="note-icon fas fa-rocket"></i><p>🎈<a href="/2021/06/03/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/">欧几里得算法</a> </p></div><h2 id="级数"><a href="#级数" class="headerlink" title="级数"></a><font size=3em color='#3eede7'><strong>级数</strong></font></h2><p>未写后面补上…</p><p><font size=3em color='#3eede7'><strong>快速幂</strong></font></p><p><strong>模板①</strong></p><pre class="line-numbers language-java" data-language="java"><code class="language-java">public static int ex(int a, int n)&#123;    if(n&#x3D;&#x3D;1)&#123;        return a;    &#125;    int temp &#x3D; a;    int res &#x3D; 1;    int exponent &#x3D; 1;    while((exponent &lt;&lt; 1) &lt; n)&#123;        temp *&#x3D; temp;        exponent &#x3D; exponent&lt;&lt;1;    &#125;    res *&#x3D; ex(a,exponent);     return res*temp;&#125;</code></pre><p><strong>模板②</strong></p><pre class="line-numbers language-java" data-language="java"><code class="language-java">public static long ex2(long a,long n)&#123;    long PingFangShu &#x3D; n;    long result &#x3D; 1;    while(n!&#x3D;0)&#123;        if(n&amp;1&#x3D;&#x3D;1)&#123;            result *&#x3D;PingFangShu;        &#125;        PingFangShu *&#x3D;PingFangShu;        n&gt;&gt;&#x3D;1;    &#125;    return result;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>欧几里得算法</title>
+      <link href="/2021/06/03/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/"/>
+      <url>/2021/06/03/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<div style='text-align: center;'><h1> <font size=5em color='#ff7f50'>欧几里得算法</font></h1></div><p>🥗<strong>求最大公约数</strong></p><pre class="line-numbers language-java" data-language="java"><code class="language-java">public long gcd(long a,long b)&#123;    return b&#x3D;&#x3D;0?a:gcd(b,a%b);&#125;</code></pre><p>🥚<strong>最小公倍数</strong></p><pre class="line-numbers language-java" data-language="java"><code class="language-java">public long lcm(long a,long b)&#123;    return a*b&#x2F;gcd(a,b);&#125;</code></pre><p> <font size=3em color='#3eede7'><strong>扩展欧几里得算法</strong></font></p><blockquote><p>ext_gcd(a, b)  求得a 和 b 的最大公约数 并且求得 ax + by = gcd(a , b) 的解 x , y</p><ul><li>如何递推 :</li></ul><p>​         ① x = y1</p><p>​         ② y = x1 - a/b*y1</p><ul><li><p>通解</p><p>   ① X = X0 + (b/gcd)*t</p><p>   ② y = y0  -  (a/gcd)*t</p></li><li><p>如果想要得到x大于0的第一个解?</p><p>   ① b /= d ;  x = (x0%b+b)%b</p></li></ul></blockquote><pre class="line-numbers language-java" data-language="java"><code class="language-java">public class ExtGcd&#123;    static long x;    static long y;    public static long ext_gcd(long a , long b)&#123;        if(b&#x3D;&#x3D;0)&#123;           x&#x3D;1;           y&#x3D;0;           return a;       &#125;long res &#x3D; ext_gcd(b,a%b);        long x1 &#x3D; x; &#x2F;&#x2F;备份 x        x &#x3D; y;        y &#x3D; x1 - a&#x2F;b*y;        return res;    &#125;&#125;</code></pre><p>🍧<strong>线性方程求解</strong></p><pre class="line-numbers language-java" data-language="java"><code class="language-java">static long x;static long y;public static long linearEquation(long a,long b,long m) throw Exception&#123;    long d &#x3D; ext_gcd(a,b); &#x2F;&#x2F; ax + by &#x3D;gcd(a,b) 的解,要求线性方程的解则两边同乘 m&#x2F;gcd(a,b)    if(m%d!&#x3D;0) throw new Exception(&quot;无解&quot;);  &#x2F;&#x2F;若 m 不是gcd(a,b) 的整数倍 , 则方程无整数解    long n &#x3D; m&#x2F;d;    x *&#x3D; n;    y *&#x3D; n;   return d;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数论 </tag>
+            
+            <tag> 欧几里得算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>二叉搜索树</title>
       <link href="/2021/05/27/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/"/>
       <url>/2021/05/27/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/</url>
