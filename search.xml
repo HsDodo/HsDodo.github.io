@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>KMP算法</title>
+      <link href="/2021/08/10/KMP%E7%AE%97%E6%B3%95/"/>
+      <url>/2021/08/10/KMP%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<div style='text-align: center;'><h1> <font size=5em color='#ff7f50'>KMP算法</font></h1></div><p><font size=4em color='#afdd22'>核心代码</font></p><blockquote><p>KMP算法的核心就是如何获取Next数组</p></blockquote><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;iostream&gt;#include &quot;bits&#x2F;stdc++.h&quot;using namespace std;const int MAXN &#x3D; 1000 + 5;char str[MAXN],pattern[MAXN];int Next[MAXN];int cnt;void getNext(char *p)&#123; &#x2F;&#x2F;获取以0为下标起点的Next数组    int len &#x3D; strlen(p);    Next[0]&#x3D;0;Next[1]&#x3D;0;    for(int i&#x3D;1;i&lt;len;i++)&#123;        int k &#x3D; Next[i]; &#x2F;&#x2F;用第i个字符的失配点来找下一个字符的失配点        while(k&amp;&amp;p[i]!&#x3D;p[k]) k&#x3D;Next[k];  &#x2F;&#x2F;找失配点,跳出后看失配点是否为0        Next[i+1] &#x3D; (p[i]&#x3D;&#x3D;p[k])?k+1:0;    &#125;&#125;void KMP(char *s,char *p)&#123;    int slen &#x3D; strlen(s),plen &#x3D; strlen(p);    getNext(p);    int k&#x3D;0;    for(int i&#x3D;0;i&lt;slen;i++)&#123;        while(k&amp;&amp;s[i]!&#x3D;p[k]) k &#x3D; Next[k]; &#x2F;&#x2F;一直更新失配点直到 s[i] &#x3D; p[k] 或者 k&#x3D;&#x3D;0 ,也就是k 回退        if(s[i]&#x3D;&#x3D;p[k]) k++; &#x2F;&#x2F;能匹配上则模式串指针往后移一位        if(k&#x3D;&#x3D;plen)&#123;            cout &lt;&lt; &quot;找到匹配的位置: &quot; &lt;&lt; i+1-plen &lt;&lt; endl;        &#125;    &#125;&#125;</code></pre><p><strong>另一种写法</strong></p><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void getNext(string p)&#123;int j&#x3D;1,k&#x3D;0;    next[1]&#x3D;0;    while(j&lt;p.length())&#123;        if(k&#x3D;&#x3D;0||p[j-1]&#x3D;&#x3D;p[k-1])&#123; &#x2F;&#x2F;注意这里的数组下标是以1开始的            next[++j]&#x3D;++k;        &#125;else&#123;            k&#x3D;next[k];        &#125;    &#125;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> KMP算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>英语生词</title>
       <link href="/2021/08/05/%E8%8B%B1%E8%AF%AD%E7%94%9F%E8%AF%8D/"/>
       <url>/2021/08/05/%E8%8B%B1%E8%AF%AD%E7%94%9F%E8%AF%8D/</url>

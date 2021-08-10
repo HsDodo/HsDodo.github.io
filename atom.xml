@@ -6,7 +6,7 @@
   <link href="www.lhongsen.top/atom.xml" rel="self"/>
   
   <link href="www.lhongsen.top/"/>
-  <updated>2021-08-05T00:40:48.765Z</updated>
+  <updated>2021-08-10T10:12:53.975Z</updated>
   <id>www.lhongsen.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KMP算法</title>
+    <link href="www.lhongsen.top/2021/08/10/KMP%E7%AE%97%E6%B3%95/"/>
+    <id>www.lhongsen.top/2021/08/10/KMP%E7%AE%97%E6%B3%95/</id>
+    <published>2021-08-10T09:47:22.000Z</published>
+    <updated>2021-08-10T10:12:53.975Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div style=&#39;text-align: center;&#39;&gt;
+&lt;h1&gt; &lt;font size=5em color=&#39;#ff7f50&#39;&gt;KMP算法&lt;/font&gt;
+&lt;/h1&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;font size=4em</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="www.lhongsen.top/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="KMP算法" scheme="www.lhongsen.top/tags/KMP%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>英语生词</title>
